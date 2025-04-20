@@ -17,11 +17,8 @@ app.py  –  Dash 3.x web app for Nortek Signature 55 ADCP data
 # ------------------------------------------------------------------
 # 0) PATH TO RAW STRING FILE
 # ------------------------------------------------------------------
-DATA_FILE = (
-    r"C:\Users\PedroPacheco\OneDrive - Nortek AS\General\10.DADOS"
-    r"\SIGNATURE\Brazil\Abyss\BravaStar_Baixados do Signature"
-    r"\String Signature.txt"
-)
+
+DATA_FILE = Path(__file__).resolve().parent / "data" / "String Signature.txt"
 
 # ------------------------------------------------------------------
 # 1) BUILD DATAFRAME
