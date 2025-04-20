@@ -79,7 +79,7 @@ def make_fig(sub, col, title, is_corr):
             hovertemplate="Time=%{name}<br>Depth=%{y:.2f} m<br>%{x}<extra></extra>"
         ))
     fig.update_yaxes(autorange="reversed", title="Depth (m)")
-    fig.update_xaxes(title="Correlation (counts)" if is_corr else "Amplitude (counts)")
+    fig.update_xaxes(title="Correlation (%)" if is_corr else "Amplitude (counts)")
     fig.update_layout(
         title=title, legend_title="Profile (HHMMSS)",
         margin=dict(l=55,r=40,t=50,b=40)
